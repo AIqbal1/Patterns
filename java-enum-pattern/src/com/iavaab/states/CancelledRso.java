@@ -1,21 +1,22 @@
-package com.ingg.states;
+package com.iavaab.states;
 
-import com.ingg.state.pattern.ReservationStatusOperations;
+import com.iavaab.state.pattern.ReservationStatusOperations;
 
-public class NewRso implements ReservationStatusOperations {
+public class CancelledRso implements ReservationStatusOperations {
 
 	@Override
 	public ReservationStatus accept(Reservation reservation) {
-		return ReservationStatus.ACCEPTED;
+		throw new UnsupportedOperationException();
 	}
 
 	@Override
 	public ReservationStatus charge(Reservation reservation) {
-		return ReservationStatus.CANCELLED;
+		throw new UnsupportedOperationException();
 	}
 
 	@Override
 	public ReservationStatus cancel(Reservation reservation) {
 		throw new UnsupportedOperationException();
 	}
+
 }

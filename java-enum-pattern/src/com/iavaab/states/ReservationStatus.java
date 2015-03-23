@@ -1,6 +1,6 @@
-package com.ingg.states;
+package com.iavaab.states;
 
-import com.ingg.state.pattern.ReservationStatusOperations;
+import com.iavaab.state.pattern.ReservationStatusOperations;
 
 public enum ReservationStatus implements ReservationStatusOperations {
 

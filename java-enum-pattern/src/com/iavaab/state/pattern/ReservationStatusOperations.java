@@ -1,7 +1,7 @@
-package com.ingg.state.pattern;
+package com.iavaab.state.pattern;
 
-import com.ingg.states.Reservation;
-import com.ingg.states.ReservationStatus;
+import com.iavaab.states.Reservation;
+import com.iavaab.states.ReservationStatus;
 
 public interface ReservationStatusOperations {
 	ReservationStatus accept(Reservation reservation);

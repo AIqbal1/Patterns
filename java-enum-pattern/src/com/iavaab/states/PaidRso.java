@@ -1,8 +1,8 @@
-package com.ingg.states;
+package com.iavaab.states;
 
-import com.ingg.state.pattern.ReservationStatusOperations;
+import com.iavaab.state.pattern.ReservationStatusOperations;
 
-public class CancelledRso implements ReservationStatusOperations {
+public class PaidRso implements ReservationStatusOperations {
 
 	@Override
 	public ReservationStatus accept(Reservation reservation) {
@@ -18,5 +18,4 @@ public class CancelledRso implements ReservationStatusOperations {
 	public ReservationStatus cancel(Reservation reservation) {
 		throw new UnsupportedOperationException();
 	}
-
 }
